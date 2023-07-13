@@ -1,0 +1,83 @@
+/*  */
+:root {
+    --main-color:#3a68b7;
+    
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color) ;
+    font-family: Roboto, sans-serif;
+}
+.form{
+    width: 90%;
+    max-width: 32rem; 
+    color: black;
+    background-image: linear-gradient(to right, rgba(0,0,0,.3) .5rem, white .5rem);
+}
+.form__fildset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: .25em;
+    padding: 2rem;
+    
+}
+.form__title{
+   
+    font-size: 2rem;
+    color: var(--main-color);
+    font-weight: 300;
+    padding-top: 2.5rem;
+}
+.form__label{
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.form__input{
+    padding: .5em 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: .8rem;
+    outline: none;
+    transition: padding-left .1s;
+}
+.form__input:focus{
+    outline: 2px solid var(--main-color);
+    padding-left: .5rem;
+}
+.btn{
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    padding: .8rem 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+.btn-primary{
+    background-color: var(--main-color);
+    color: white;
+}
+.btn-secondary {
+    color: var(--main-color);
+}
+.form__action{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__action_aside {
+    font-size: .85rem;
+    flex-grow: 1;
+    text-align: right;
+    color: #999;
+    
+}

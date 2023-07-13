@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>login</title>
+    <link rel="stylesheet" href="/Estilo/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form autocomplete="off" class="form">
+      <fieldset class="form__fildset">
+        <legend class="form__title">Login</legend>
+        <label for="user" class="form__label">Usuário</label>
+        <input type="text" name="user" id="user" required class="form__input">
+        <label for="pass" class="form__label">senha</label>
+        <input type="password" name="pass" id="pass" required class="form__input">
+        <div class="form__action">
+            <input type="submit" value="login" class="btn btn-primary">
+            <a href="http://127.0.0.1:5500/cadastro.html" class="btn btn-secondary"> Cadastre-se</a>
+            <a href="#" class="form__action_aside">Esqueci a minha senha</a>
+          </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
